@@ -1,0 +1,12 @@
+.bg-method{
+    background-image: url("./images/banner-1709771_1920.jpg");
+}
+.blue-letter{
+    color: #3f4bb8;
+
+    text-shadow: 1px 1px 2px #3f4bb8;
+
+}
+.card{
+    border: none;
+}
