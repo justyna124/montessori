@@ -1,7 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+body{
+
+}
 nav{
         color: #615e5d;
       background-color: #f9f9f9;
+    /*width: 100%;*/
+}
+.fixed-top{
 
 }
 .logo{
@@ -11,7 +17,15 @@ a{
     color: white;
 }
 .navbar-toggler{
+
     border: 2px solid white;
+}
+.gradient-text {
+    /*background: -webkit-linear-gradient(45deg, #3f4bb8 , #e13c4c , #ffbb42 , #4c7737 );*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    /*text-shadow: none;*/
+
 }
 
 .title{
@@ -25,18 +39,133 @@ a{
     padding-right: 0;
 }
 
+
+
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    /*box-shadow: 0px 0px 1px 0px #508fb9;*/
+    overflow: hidden;
+}
+
+.small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+    overflow: hidden;
+}
+
+.medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+    overflow: hidden;
+}
+
+.large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+    overflow: hidden;
+}
+
+.xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+    overflow: hidden;
+}
+
+.xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+    overflow: hidden;
+}
+
+.shade1{
+    opacity: 0.2;
+}
+.shade2{
+    opacity: 0.5;
+}
+
+.shade3{
+    opacity: 0.7;
+}
+
+.shade4{
+    opacity: 0.8;
+}
+
+.shade5{
+    opacity: 0.9;
+}
+
+@keyframes ripple{
+    0%{
+        transform: scale(0.8);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(0.8);
+    }
+}
+.img-header{
+    /*object-fit: contain;*/
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*display: block;*/
+    /*margin: auto;*/
+    width: 100%;
+    height: 100%;
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+
+
+}
+.space{
+    letter-spacing: 1px;
+}
 .header{
-    color: white;
+    position: relative;
+        color: white;
     font-size: 40px;
     font-weight: bold;
-    /*background: url("./images/header.jpg") center no-repeat  ;*/
-    background: url("./images/IMG_0380.JPG") center no-repeat  ;
-    background-size: cover;
-    height: 90vh;
-    object-fit: contain;
+    text-shadow: 1px 1px 2px white;
+    font-family: 'Sriracha', cursive;
+        /*height: 100vh;*/
+    /*width: 100vw;*/
+  overflow: hidden;
+       z-index: 0;
+
 }
-.b-img{
-    border: 6px solid white;
+.text-header{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/*.b-img{*/
+    /*border: 6px solid white;*/
+/*}*/
+
+.learn-more{
+    height: 300px;
 }
 
 .btn-submit{
@@ -47,6 +176,22 @@ a{
     padding: 10px 10px 10px 10px;
     border-radius: 0;
     font-weight: bold;
+}
+.red-letter{
+    color: #e13c4c;
+
+    text-shadow: 1px 1px 2px #e13c4c;
+    font-family: 'Sriracha', cursive;
+
+}
+.blue-letter{
+    color: #3f4bb8;
+    font-family: 'Sriracha', cursive;
+    text-shadow: 1px 1px 2px #3f4bb8;
+
+}
+.l-spacing{
+    letter-spacing: 1px;
 }
 
 .card{
@@ -71,6 +216,9 @@ a{
     left: 0;
     right: 0;
     text-align: center;
+}
+.z-index{
+    z-index: 10;
 }
 .btn:focus{
     box-shadow: none;
@@ -228,5 +376,12 @@ a{
 }
 .p-blue button {
     background: #3f4bb8;
+}
+
+@media all and (min-width: 400px) and (max-width: 991px){
+   .learn-more{
+       height: 470px;
+   }
+
 }
 

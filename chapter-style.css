@@ -1,0 +1,27 @@
+.circle{
+    width: 300px;
+    height: 300px;
+    /*height: 20vw;*/
+
+    border-radius: 50%;
+    background-color: #3f4bb8;
+    color: white;
+    text-align: center;
+}
+.title{
+    line-height: 300px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    .circle{
+        width: 200px;
+        height: 200px;
+
+    }
+    .title{
+        line-height: 200px;
+        font-size: 20px;
+
+    }
+
+}
