@@ -378,6 +378,39 @@ a{
     background: #3f4bb8;
 }
 
+.example {
+    position: relative;
+    width: 80%;
+    padding-top: 50%;
+    margin: 2rem auto;
+}
+
+.example > .block {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    perspective: 1000px;
+}
+.example > .block:nth-of-type(1) {
+     height: 80%;
+     top: 10%;
+     left: 17%;
+     width: 15%;
+ }
+
+.example > .block:nth-of-type(2) {
+     top: 0;
+     left: 35%;
+ }
+
+.example > .block:nth-of-type(3) {
+     height: 80%;
+     top: 10%;
+     left: 64%;
+     width: 15%;
+ }
+
+
 @media all and (min-width: 400px) and (max-width: 991px){
    .learn-more{
        height: 470px;
