@@ -7,6 +7,37 @@
     text-shadow: 1px 1px 2px #3f4bb8;
 
 }
-.card{
-    border: none;
+.txt-blue {
+ color: #3f4bb8;
 }
+.card-header-blue {
+    border-left: 4px solid #3f4bb8;
+}
+.txt-red {
+       color: #e13c4c;
+}
+.card-header-red {
+    border-left: 4px solid #e13c4c;
+}
+.txt-yellow{
+    color: #ffbb42;
+}
+
+.card-header-yellow {
+    border-left: 4px solid #ffbb42;
+}
+.txt-green{
+       color: #4c7737;
+}
+.card-header-green {
+    border-left: 4px solid #4c7737;
+}
+.text-decoration-none{
+    text-decoration: none;
+}
+.card-header:first-child{
+    border-radius: 0px;
+}
+/*.card{*/
+    /*border: none;*/
+/*}*/
