@@ -21,6 +21,10 @@ li{
   list-style-type: none;
 
 }
+.why-worth{
+  background-color: #326647;
+
+}
 .title-line {
   color: #326647;
   position: relative;
@@ -212,6 +216,26 @@ li{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.bg-img{
+  /*background-image: url("images/Sequence 01.01_50_29_02.Still023.jpg");*/
+  /*background-size: cover;*/
+  /*filter: invert(0.3)*/
+}
+.bg-img ul{
+  /*position: absolute ;*/
+
+}
+.list-group-item{
+  background-color: transparent;
+
+}
+
+.button{
+  background-color: #326647;
+  border-color: #326647;
+}
+
 
 /*.btn-submit{*/
 /*background-color: #3f4bb8;*/
