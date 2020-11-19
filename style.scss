@@ -1,0 +1,125 @@
+/*TODO this file must be cleaned up*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+.mt {
+  margin-top: 8%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title-line {
+  color: #326647;
+  position: relative;
+  text-transform: none;
+}
+
+.title-line:before {
+  content: '';
+  width: 100%;
+  border-bottom: 1px solid #326647;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.title-line span {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  padding: 0 30px;
+}
+
+.title {
+  color: #326647;
+  text-shadow: 1px 1px 2px #326647;
+  font-family: 'Sriracha', cursive;
+}
+
+.font-sriracha {
+  font-family: 'Sriracha', cursive;
+  color: #326647;
+}
+
+.btn-outline-success {
+  color: #326647;
+  border-color: #326647;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #326647;
+  border-color: #326647;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #326647;
+  border-color: #326647;
+}
+
+.card-container {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  -o-perspective: 900px;
+  perspective: 900px;
+  width: 300px;
+  position: relative;
+  margin-top: 90px;
+}
+
+.padding-bottom-card {
+  padding-bottom: 200px;
+}
+
+.first-card {
+  z-index: 6;
+}
+
+.second-card {
+  z-index: 5;
+}
+
+.third-card {
+  z-index: 4;
+}
+
+.fourth-card {
+  z-index: 3;
+}
+
+.card-component .front {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(-35deg);
+  -moz-transform: rotateY(-35deg);
+  -o-transform: rotateY(-35deg);
+  transform: rotateY(-35deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  cursor: pointer;
+  box-shadow: 10px 4px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-component {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
+}
